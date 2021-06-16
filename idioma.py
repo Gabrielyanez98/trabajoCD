@@ -13,4 +13,4 @@ class Idioma:
    
     
     def __str__(self):
-        return "EL idioma es: " + self.__idioma 
+        return   self.__idioma 

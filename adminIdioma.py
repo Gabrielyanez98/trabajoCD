@@ -6,12 +6,12 @@ class AdminEntidades():
     def __init__(self):
         pass
 
-    def insert(idioma):
-        
+    def insert(self,idioma):
+        self.idioma = idioma
         
         cnx = mysql.connector.connect( user='root', password='root', host='localhost', database='trabajocd')
         cursor = cnx.cursor()
-        insert = "INSERT INTO idioma (nombre) VALUES ('%s')" % (idioma)
+        insert = "INSERT INTO idioma (nombre) VALUES ('%s')" % (self.idioma)
         cursor.execute(insert)
         cnx.commit()
         cursor.close()

@@ -2,8 +2,8 @@ from idioma import Idioma
 from adminIdioma import AdminEntidades
 
 
-miIdioma = Idioma("Cast")
+miIdioma = Idioma("Catalán")
 
 Admin = AdminEntidades()
 
-Admin.insert("castellano")
+Admin.insert(miIdioma.getIdioma())
